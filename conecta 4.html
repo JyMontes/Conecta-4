@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conecta 4</title>
+    <link rel="stylesheet" href="conecta 4.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="titulo" >
+        <h1 >Juega conecta 4</h1>
+        
+    </div> 
+
+    <div id='jugadores'>
+        
+        <label id="lbl-1" style="font-size: x-large;" style="font-family: 'Roboto Mono', monospace;">El turno es de: <span contenteditable="true" id="jugador-1">Jugador 1 <div class="circulo-1"></div></span></label><br>
+        <label id="lbl-2" style="font-size: x-large;"style="font-family: 'Roboto Mono', monospace;">El turno es de: <span contenteditable="true" id="jugador-2">Jugador 2 <div class='circulo-2'></div></span></label>
+        <div id="ganador-" style="font-size: xx-large;" style="font-family: 'Roboto Mono', monospace;"></div>
+    </div>
+
+    <div>
+        <table id="tabla">
+            <thead >
+                <th> <button id="boton-1"class='boton' onclick="turnos(); mostrar_ganador()"></button></th>
+                <th><button id="boton-2"class='boton'  onclick="turnos2(); mostrar_ganador()"></button></th>
+                <th><button id="boton-3"class='boton'  onclick="turnos3(); mostrar_ganador()"> </button></th>
+                <th><button id="boton-4"class='boton'  onclick="turnos4(); mostrar_ganador()"> </button></th>
+                <th><button id="boton-5"class='boton'  onclick="turnos5(); mostrar_ganador()"> </button></th>
+                <th><button id="boton-6"class='boton'  onclick="turnos6(); mostrar_ganador()"> </button></th>
+                <th><button id="boton-7"class='boton'  onclick="turnos7(); mostrar_ganador()"> </button></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button id="boton-8"class='boton'  onclick="turnos(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-9"class='boton'  onclick="turnos2(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-10"class='boton' onclick="turnos3(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-11"class='boton' onclick="turnos4(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-12"class='boton' onclick="turnos5(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-13"class='boton' onclick="turnos6(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-14"class='boton' onclick="turnos7(); mostrar_ganador()"> </button></td>
+                </tr>
+                <tr>
+                    <td><button id="boton-15"class='boton' onclick="turnos(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-16"class='boton' onclick="turnos2(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-17"class='boton' onclick="turnos3(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-18"class='boton' onclick="turnos4(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-19"class='boton' onclick="turnos5(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-20"class='boton' onclick="turnos6(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-21"class='boton' onclick="turnos7(); mostrar_ganador()"> </button></td>
+                </tr>
+                <tr>
+                    <td><button id="boton-22"class='boton' onclick="turnos(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-23"class='boton' onclick="turnos2(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-24"class='boton' onclick="turnos3(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-25"class='boton' onclick="turnos4(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-26"class='boton' onclick="turnos5(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-27"class='boton' onclick="turnos6(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-28"class='boton' onclick="turnos7(); mostrar_ganador()"> </button></td>
+                </tr>
+                <tr>
+                    <td><button id="boton-29"class='boton' onclick="turnos(); mostrar_ganador()"></button></td>
+                    <td><button id="boton-30"class='boton' onclick="turnos2(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-31"class='boton' onclick="turnos3(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-32"class='boton' onclick="turnos4(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-33"class='boton' onclick="turnos5(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-34"class='boton' onclick="turnos6(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-35"class='boton' onclick="turnos7(); mostrar_ganador()"> </button></td>
+                </tr>
+                <tr>
+                    <td><button id="boton-36"class='boton' onclick="turnos(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-37"class='boton' onclick="turnos2(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-38"class='boton' onclick="turnos3(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-39"class='boton' onclick="turnos4(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-40"class='boton' onclick="turnos5(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-41"class='boton' onclick="turnos6(); mostrar_ganador()"> </button></td>
+                    <td><button id="boton-42"class='boton' onclick="turnos7(); mostrar_ganador()"> </button></td>
+                </tr>
+               
+                
+                             
+            </tbody>
+        </table>
+    </div>
+
+    <div id="reiniciar">
+        <button id="btn-reiniciar" onclick="reiniciar()">Reiniciar Partida</button>
+    </div>
+    <script src="concecta 4.js"></script>
+</body>
+</html>
